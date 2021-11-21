@@ -72,11 +72,11 @@ df = pd.read_csv('https://raw.githubusercontent.com/marcos-mansur/plot_route_app
 df_rotas = split_df_rotas(df)
 
 # Título
-st.title('Plot Routes on map')
-st.write('This app plots routes from a data set of random locations '
+st.title('Plot and compare Routes on geospatial map')
+st.write('This app can plot multiple routes for easy comparison. The 11 examples are from a randomly generated dataset of random locations '
          'at São Paulo - Brazil. It works for any dataset with columns named'
          '"Rota" (route name), "Lat" (latitude) and "Long" (longitude).')
-st.write('Select how many and which routes do you want to plot in the sidebar at the left.')
+st.write('You can select how many and which routes do you want to plot in the left sidebar menu.')
 # select slide na sidebar para definir o número de rotas a serem plotadas
 n_rotas = st.sidebar.slider('How many routes do you wish to plot?',
                             max_value = df['Rota'].nunique())
