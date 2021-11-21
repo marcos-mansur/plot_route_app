@@ -7,5 +7,5 @@ Deployed at: https://share.streamlit.io/marcos-mansur/plot_route_app/main/MyApp.
 
 Planned improvements:
   - Make so the routes can have string for name
-  - add a input text box so people can input the routes adresses
+  - add a input text box so the user can input the routes adresses
   - connect with google maps api to fetch more coordinate points of the actual street route so the plotted routes look more real 
