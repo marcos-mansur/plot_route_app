@@ -63,9 +63,9 @@ st.set_page_config(page_icon='random',
 )
 
 # salva o endereço do diretório
-cwd = os.getcwd()
+# cwd = os.getcwd()
 # carrega os dados
-df = pd.read_csv(os.path.join(cwd, 'Data\Data.csv'),
+df = pd.read_csv('https://raw.githubusercontent.com/marcos-mansur/plot_route_app/main/Data/Data.csv',  #os.path.join(cwd, 'Data\Data.csv'),
                  header=0,
                  index_col=0)
 # separa os dataframes por rota
