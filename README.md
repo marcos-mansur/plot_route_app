@@ -3,6 +3,7 @@ A streamlit based web app to plot geospatial routes on a map from input data of 
 
 Deployed at: https://share.streamlit.io/marcos-mansur/plot_route_app/main/MyApp.py
 
+![image](https://user-images.githubusercontent.com/85962012/142775981-f9f5bc67-dca9-42ac-bd95-983279d6ce76.png)
 
 Planned improvements:
   - Make so the routes can have string for name
