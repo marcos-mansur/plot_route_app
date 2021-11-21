@@ -65,7 +65,7 @@ st.set_page_config(page_icon='random',
 # salva o endereço do diretório
 cwd = os.getcwd()
 # carrega os dados
-df = pd.read_csv(os.path.join(cwd, 'Data\Data.csv'), #'Data\HBR.csv'),
+df = pd.read_csv(os.path.join(cwd, 'Data\Data.csv'),
                  header=0,
                  index_col=0)
 # separa os dataframes por rota
@@ -75,8 +75,8 @@ df_rotas = split_df_rotas(df)
 st.title('Plot Routes on map')
 st.write('This app plots routes from a data set of random locations '
          'at São Paulo - Brazil. It works for any dataset with columns named'
-         '"Rota" (route name), "Lat" (latitude) and "Long" (longitude)')
-st.write('Select how many and which routes do you want to plot')
+         '"Rota" (route name), "Lat" (latitude) and "Long" (longitude).')
+st.write('Select how many and which routes do you want to plot in the sidebar at the left.')
 # select slide na sidebar para definir o número de rotas a serem plotadas
 n_rotas = st.sidebar.slider('How many routes do you wish to plot?',
                             max_value = df['Rota'].nunique())
